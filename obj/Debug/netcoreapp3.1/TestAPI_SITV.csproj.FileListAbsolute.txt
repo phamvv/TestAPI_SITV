@@ -60,7 +60,6 @@ D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\runtimes\win-x86\nati
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\netcoreapp3.1\TestAPI_SITV.csprojAssemblyReference.cache
 D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\netcoreapp3.1\TestAPI_SITV.csproj.CopyComplete
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll

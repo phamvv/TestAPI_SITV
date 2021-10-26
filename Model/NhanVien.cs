@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TestAPI_SITV.Model
 {
-    [Table("article")]
+    [Table("NhanVien")]
     public class NhanVien
     {
         [Key]   

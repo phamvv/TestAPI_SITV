@@ -2,22 +2,32 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Configuration;
 
 namespace TestAPI_SITV.Model
 {
     public class MyDataContext : DbContext
     {
-        public DbSet<NhanVien> nhanViens { set; get; }        // khai báo bảng Nhân Viên từ Model
 
+        public MyDataContext(DbContextOptions<MyDataContext> options)
+            : base(options)
+        { 
+        
+        }
 
-        // chuỗi kết nối đến database với tên MyDB sẽ làm việc
-        public const string ConnectStrring = @"Data Source=localhost,1433;Initial Catalog=MyDB;User ID=SA;Password=Password123";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(ConnectStrring);                // thiết lập kết nối đến database
+        {          
             optionsBuilder.UseLoggerFactory(GetLoggerFactory());        // bật logger
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Thiết lập khóa chính primary key(Nhân Viên) nếu Thuộc tính khóa không được xác định từ model
+            modelBuilder.Entity<NhanVien>().HasKey(s => s.ID);
+
+        }
+
 
         private ILoggerFactory GetLoggerFactory()
         {
@@ -29,6 +39,8 @@ namespace TestAPI_SITV.Model
             return serviceCollection.BuildServiceProvider()
                     .GetService<ILoggerFactory>();
         }
+
+        public DbSet<NhanVien> nhanViens { set; get; }        // khai báo bảng Nhân Viên từ Model
 
     }
 
