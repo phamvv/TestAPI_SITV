@@ -1,7 +1,8 @@
 //load danh sách người dùng
+var urlAPI = "http://localhost/api/nhanviens";
 function loadTable() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET","http://localhost/api/nhanviens");
+    xhttp.open("GET",urlAPI);
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -46,13 +47,13 @@ function loadTable() {
   
   //thêm mới một người dùng
   function userCreate() {
-    const fname = document.getElementById("maNhanVien").value;
-    const lname = document.getElementById("hoTenNhanVien").value;
-    const username = document.getElementById("diaChi").value;
-    const email = document.getElementById("phongBan").value;
+    const maNhanVien = document.getElementById("maNhanVien").value;
+    const hoTenNhanVien = document.getElementById("hoTenNhanVien").value;
+    const diaChi = document.getElementById("diaChi").value;
+    const phongBan = document.getElementById("phongBan").value;
       
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost/api/nhanviens");
+    xhttp.open("POST", urlAPI);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "maNhanVien": maNhanVien, 
@@ -73,7 +74,7 @@ function loadTable() {
   function showUserEditBox(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://localhost/api/nhanviens/"+id);
+    xhttp.open("GET", urlAPI + "/" + id);
     xhttp.send();
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
@@ -106,7 +107,7 @@ function loadTable() {
     const phongBan = document.getElementById("phongBan").value;
       
     const xhttp = new XMLHttpRequest();
-    xhttp.open("PUT", "http://localhost/api/nhanviens/" + id);
+    xhttp.open("PUT", urlAPI + "/" + id);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "id": id, 
@@ -127,7 +128,7 @@ function loadTable() {
   //hàm xóa người dùng
   function userDelete(id) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", "http://localhost/api/nhanviens/" + id);
+    xhttp.open("DELETE",  urlAPI + "/" + id);
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({ 
       "id": id
