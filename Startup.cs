@@ -27,13 +27,14 @@ namespace TestAPI_SITV
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(); 
 
             //nếu chua thiết lập chuỗi kết nối từ fle con fig thì chọn lệnh sau,
             //đang sử dụng chuỗi kết nối trực tiếp tại MyDataContext nên không caanhf lẹnh này
 
             services.AddDbContext<MyDataContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MyDataContext")));
+            options.UseSqlServer(Configuration.GetConnectionString("MyDataContext")));           
 
         }
 

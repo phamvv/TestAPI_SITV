@@ -46,6 +46,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -85,6 +89,14 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.3, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.1.2, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.6.0, )"
             }
           },
           "imports": [

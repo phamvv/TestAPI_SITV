@@ -9,8 +9,9 @@ using TestAPI_SITV.Model;
 
 namespace TestAPI_SITV.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")] 
+    [Produces("application/json")]
     public class NhanViensController : ControllerBase
     {
         private readonly MyDataContext _context;
@@ -38,7 +39,7 @@ namespace TestAPI_SITV.Controllers
                 return NotFound();
             }
 
-            return nhanVien;
+            return Ok(nhanVien);
         }
 
         // PUT: api/NhanViens/5
@@ -68,7 +69,7 @@ namespace TestAPI_SITV.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         // POST: api/NhanViens
@@ -94,7 +95,7 @@ namespace TestAPI_SITV.Controllers
             _context.nhanViens.Remove(nhanVien);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return Ok();
         }
 
         private bool NhanVienExists(int id)

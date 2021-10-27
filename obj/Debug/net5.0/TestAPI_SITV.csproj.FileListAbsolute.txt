@@ -105,7 +105,6 @@ D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win-x86\native\sni.
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\net5.0\TestAPI_SITV.csprojAssemblyReference.cache
 D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\net5.0\TestAPI_SITV.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\net5.0\TestAPI_SITV.AssemblyInfoInputs.cache
 D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\net5.0\TestAPI_SITV.AssemblyInfo.cs
@@ -134,3 +133,9 @@ D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win-x86\native\Micr
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\bundleconfig.json
+D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\TestAPI_SITV.Views.dll
+D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Github\WebAPI_SITV\TestAPI_SITV\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\Github\WebAPI_SITV\TestAPI_SITV\obj\Debug\net5.0\TestAPI_SITV.csprojAssemblyReference.cache

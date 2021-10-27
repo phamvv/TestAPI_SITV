@@ -10,5 +10,10 @@
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>TestAPI_SITV.Model.MyDataContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
+    <_SelectedScaffolderID>MvcLayoutScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Layouts</_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_EnablerDialogWidth>650</WebStackScaffolding_EnablerDialogWidth>
+    <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>IISProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
